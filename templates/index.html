@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My ChatBot</h1>
+        <p>Ask me anything about health and well-being!</p>
+    </div>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <div class="input-area">
+            <input id="user-input" type="text" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        async function sendMessage() {
+            const userMessage = document.getElementById("user-input").value;
+            const chatBox = document.getElementById("chat-box");
+
+            if (userMessage) {
+                // Add user's message to the chatbox
+                const userHtml = `<div class="message user">${userMessage}</div>`;
+                chatBox.innerHTML += userHtml;
+
+                // Send the message to the server
+                const response = await fetch("/get", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: userMessage }),
+                });
+
+                const data = await response.json();
+
+                // Add chatbot's response to the chatbox
+                const botHtml = `<div class="message bot">${data.response}</div>`;
+                chatBox.innerHTML += botHtml;
+
+                // Clear the input field
+                document.getElementById("user-input").value = "";
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>

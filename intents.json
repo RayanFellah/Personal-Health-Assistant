@@ -7,8 +7,8 @@
     },
     {
       "tag": "how_are_you",
-      "patterns": ["how are you?", "how is it going?"],
-      "responses": ["I'm fine, thank you! How can I assist you?", "I'm doing great! How about you?"]
+      "patterns": ["how are you?", "how is it going?", "what's going on?"],
+      "responses": ["I'm doing great! How about you?", "I'm fine, thank you! How can I assist you?"]
     },
     {
       "tag": "goodbye",
@@ -26,19 +26,19 @@
       "responses": ["A healthy diet includes fruits, vegetables, whole grains, lean proteins, and plenty of water while limiting processed foods and added sugars.", "Focus on balanced meals with a mix of carbs, proteins, and healthy fats.", "Eating healthy means consuming nutrient-dense foods that support your overall well-being."]
     },
     {
-      "tag": "how_much_exercise",
-      "patterns": ["how much should I exercise?", "how much exercise is recommended?", "how often should I work out?"],
-      "responses": ["Experts recommend at least 150 minutes of moderate-intensity exercise per week, such as walking or cycling.", "For overall health, aim for at least 30 minutes of physical activity most days of the week."]
+      "tag": "vitamins",
+      "patterns": ["why are vitamins important?", "what do vitamins do?", "what vitamins should I take?"],
+      "responses": ["Vitamins are essential for various bodily functions, like improving immunity, supporting vision, and boosting energy.", "Vitamin C helps immunity, Vitamin D strengthens bones, and Vitamin A supports eye health."]
     },
     {
-      "tag": "exercise",
-      "patterns": ["what exercises are good for health?", "benefits of exercise", "why should I exercise?"],
-      "responses": ["Exercise improves cardiovascular health, strengthens muscles, boosts mood, and helps maintain a healthy weight.", "Try a mix of aerobic activities like running and strength training for overall fitness."]
+      "tag": "protein",
+      "patterns": ["how much protein do I need?", "what are good sources of protein?", "why is protein important?"],
+      "responses": ["Protein helps build and repair tissues, and it's vital for muscles, skin, and enzymes.", "Good sources of protein include lean meats, fish, eggs, beans, and tofu."]
     },
     {
-      "tag": "mental_health",
-      "patterns": ["how to improve mental health?", "what is mental health?", "how can I reduce stress?", "tips for good mental health"],
-      "responses": ["Mental health is about emotional, psychological, and social well-being. It's important for overall health.", "To improve mental health, practice mindfulness, get enough sleep, exercise, and connect with loved ones.", "Managing stress can involve deep breathing, meditation, and maintaining a healthy work-life balance."]
+      "tag": "fiber",
+      "patterns": ["why is fiber important?", "what foods are high in fiber?", "how much fiber do I need?"],
+      "responses": ["Fiber supports digestion and helps prevent constipation. Foods high in fiber include fruits, vegetables, beans, and whole grains.", "Aim for 25-30 grams of fiber daily for optimal health."]
     },
     {
       "tag": "hydration",
@@ -46,19 +46,39 @@
       "responses": ["Drink at least 8 glasses (about 2 liters) of water daily, or more if you're active.", "Staying hydrated supports digestion, energy levels, and skin health.", "Carry a water bottle with you and aim to drink regularly throughout the day."]
     },
     {
+      "tag": "exercise",
+      "patterns": ["what exercises are good for health?", "benefits of exercise", "why should I exercise?", "how does exercise help?"],
+      "responses": ["Exercise improves cardiovascular health, strengthens muscles, boosts mood, and helps maintain a healthy weight.", "Regular physical activity reduces the risk of chronic diseases like diabetes and heart disease."]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": ["how to improve mental health?", "what is mental health?", "how can I reduce stress?", "tips for good mental health"],
+      "responses": ["Mental health is about emotional, psychological, and social well-being. It's important for overall health.", "To improve mental health, practice mindfulness, get enough sleep, exercise, and connect with loved ones.", "Managing stress can involve deep breathing, meditation, and maintaining a healthy work-life balance."]
+    },
+    {
       "tag": "sleep",
       "patterns": ["how much sleep do I need?", "why is sleep important?", "tips for better sleep", "what happens if I don't sleep enough?"],
       "responses": ["Adults need 7-9 hours of sleep per night to maintain optimal health and energy levels.", "Good sleep improves concentration, boosts the immune system, and reduces stress.", "To improve sleep, maintain a regular sleep schedule and limit screen time before bed."]
     },
     {
-      "tag": "common_illnesses",
-      "patterns": ["how to prevent colds?", "what are the symptoms of the flu?", "how to boost immunity?", "how to avoid getting sick?"],
-      "responses": ["To prevent colds and flu, wash your hands regularly, avoid close contact with sick people, and get vaccinated.", "Boost immunity by eating healthy, staying active, and getting enough sleep.", "Symptoms of the flu include fever, chills, muscle aches, fatigue, and a sore throat."]
+      "tag": "weight_loss",
+      "patterns": ["how to lose weight?", "tips for weight loss", "best diet for weight loss"],
+      "responses": ["To lose weight, focus on a calorie deficit by eating healthy foods and staying active.", "Combine regular exercise with a balanced diet rich in fruits, vegetables, and lean proteins."]
     },
     {
-      "tag": "nutrition",
-      "patterns": ["what are essential nutrients?", "why are vitamins important?", "what should I eat for energy?", "how to get enough protein?"],
-      "responses": ["Essential nutrients include carbohydrates, proteins, fats, vitamins, minerals, and water.", "Vitamins like A, C, and D are crucial for immunity, skin health, and overall well-being.", "For energy, focus on whole foods like fruits, vegetables, nuts, and lean proteins."]
+      "tag": "immune_system",
+      "patterns": ["how to boost immunity?", "how to improve immune health?", "what helps the immune system?"],
+      "responses": ["To boost immunity, eat a balanced diet rich in vitamins (C, D, and Zinc), exercise regularly, and get enough sleep.", "Foods like citrus fruits, garlic, and yogurt are great for your immune system."]
+    },
+    {
+      "tag": "heart_health",
+      "patterns": ["how to improve heart health?", "what foods are good for the heart?", "how to prevent heart disease?"],
+      "responses": ["For heart health, eat foods rich in omega-3s like salmon, reduce salt intake, and stay active.", "Avoid trans fats and focus on whole grains, fruits, and vegetables to keep your heart healthy."]
+    },
+    {
+      "tag": "common_illnesses",
+      "patterns": ["how to prevent colds?", "what are the symptoms of the flu?", "how to avoid getting sick?", "what are common illnesses?"],
+      "responses": ["To prevent colds and flu, wash your hands regularly, avoid close contact with sick people, and get vaccinated.", "Common symptoms of the flu include fever, chills, muscle aches, fatigue, and a sore throat."]
     },
     {
       "tag": "random_fact",
